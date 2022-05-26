@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>WEBDEV CREATION</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="Sub-header">
+        <div class="main">
+            <nav>
+                <div class="logo">
+                 <img src="logo.jpg">
+                </div>
+        
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul >
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="active"><a href="about.html">About</a></li>
+                        <li class="active"><a href="contact.html">contact</a></li>
+                    </ul>
+                </div>
+               <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </div>
+        <h1>About Us</h1>
+
+    </section>
+
+   <!---------about us--------->
+   <section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>Retired employee</h1>
+            <p>The one who is Retired have to fill this form</p>
+        </div>
+    </div>
+</section>
+
+<section class="form">
+    <div class="imgBx">
+        <img src="pic3.jpg">
+    </div>
+    <div class="contentBx">
+        <div class="formBx">
+            <h2>Register</h2>
+            <form>
+                <div class="inputBx">
+                    <span>Username</span>
+                    <input type="text" name="">
+                </div>
+                <div class="inputBx">
+                    <span>Password</span>
+                    <input type="password" name="">
+                </div>
+                <div class="remeber">
+                    <label><input type="checkbox" name="">Rember Me</label>
+                </div>
+                <div class="inputBx">
+                    <input type="submit" value="Sign in" name="">
+                </div>
+                <div class="inputBx">
+                    <p>If you haven't?<a href="#">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <section class="footer">
+        <h4>About Us</h4>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+        </div>
+        <p>Made with <i class="fa fa-heart-o"></i></p>
+    </section>
+
+
+ 
+
+
+    <!-------javascript for toggle menu------->
+<script>
+
+    var navlinks= document.getElementById("navlinks")
+     function showMenu()
+    {
+        navlinks.style.right="1px";
+    }
+    function hideMenu()
+    {
+        navlinks.style.right="-200px";
+    }
+
+</script>
+
+
+</body>
+</html>
